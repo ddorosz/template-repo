@@ -1,10 +1,6 @@
 ---
-template_service: &template
-  name: Testing App
-  framework: Elixir
 version: 1
 service:
-  <<: *template
   name: Rails Webapp
   lifecycle: 
   tier: tier_1
