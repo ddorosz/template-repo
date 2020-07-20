@@ -1,8 +1,7 @@
 ---
-tools: &tools
- - name: GitHub
-   category: code
-   url: https://github.com/jklabsinc/Opslevel
+template_service: &service
+  name: Testing App
+  framework: Elixir
 version: 1
 service:
   name: Rails Webapp
@@ -11,7 +10,6 @@ service:
   product: OpsLevel
   owner: engineering
   language: Ruby
-  framework: Rails
   description: It's the whole website in a single rails monolith.
   tools:
     <<: *tools
