@@ -1,0 +1,20 @@
+---
+tools: &tools
+ - name: GitHub
+   category: code
+   url: https://github.com/jklabsinc/Opslevel
+version: 1
+service:
+  name: Rails Webapp
+  lifecycle: 
+  tier: tier_1
+  product: OpsLevel
+  owner: engineering
+  language: Ruby
+  framework: Rails
+  description: It's the whole website in a single rails monolith.
+  tools:
+    <<: *tools
+  - name: GitLab
+    category: code
+    url: https://gitlab.com/jklabsinc/OpsLevel
