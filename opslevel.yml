@@ -1,9 +1,10 @@
 ---
-template_service: &service
+template_service: &template
   name: Testing App
   framework: Elixir
 version: 1
 service:
+  <<: *template
   name: Rails Webapp
   lifecycle: 
   tier: tier_1
@@ -12,7 +13,6 @@ service:
   language: Ruby
   description: It's the whole website in a single rails monolith.
   tools:
-    <<: *tools
   - name: GitLab
     category: code
     url: https://gitlab.com/jklabsinc/OpsLevel
