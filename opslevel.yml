@@ -1,8 +1,9 @@
 ---
 version: 1
-defaults: &defaults
+DEFAULT: &DEFAULT
   framework: Elixir
 service:
+  <<: *DEFAULT
   name: Rails Webapp
   lifecycle: 
   tier: tier_1
